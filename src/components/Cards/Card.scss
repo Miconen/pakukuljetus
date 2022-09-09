@@ -1,0 +1,18 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: var(--color-bg);
+
+    &__image {
+        background: var(--color-bg-alt);
+        height: 200px;
+    }
+    &__infobox {
+        padding: 0 20px 20px 20px;
+
+        &__heading {}
+        &__info {}
+    }
+}
