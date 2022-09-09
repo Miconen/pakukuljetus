@@ -18,8 +18,10 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    // Attempts to fix weird iphone/safari bugs
     -webkit-transform: translateZ(3);
     transform: translateZ(3);
+    top: 0;
 
     > svg {
         padding: 20px;
