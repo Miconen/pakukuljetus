@@ -13,7 +13,17 @@ html, body, main {
 }
 
 nav {
+    z-index: 3;
     position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    > svg {
+        padding: 20px;
+        width: 30px;
+        height: fit-content;
+    }
 }
 
 .container {
