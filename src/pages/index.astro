@@ -3,19 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar/Navbar";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Cards from "../components/Cards/Cards";
 import Button from "../components/Button/Button";
-import Description from "../components/Description/Description";
+import Main from "../components/Pages/Index/Main";
 import "./index.scss";
 ---
 
 <Layout title="Pakukuljetus">
     <Navbar />
     <Header />
-    <main>
-        <Cards />
-        <Description />
-    </main>
-    <Button type="Main">PYYDÄ TARJOUS</Button>
+    <Main></Main>
     <Footer />
 </Layout>

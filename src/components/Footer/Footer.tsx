@@ -8,7 +8,7 @@ import DateTime from "../Links/DateTime";
 function Footer() {
     return (
         <footer className="bg-slate-500 text-white flex justify-center">
-            <Container horizontal={true} className="gap-16 p-32">
+            <Container className="gap-16 px-4 py-16 flex-col md:flex-row">
                 <div className="flex flex-col gap-8">
                     <div>
                         <h2 className="font-bold text-3xl">Yhteystiedot</h2>
