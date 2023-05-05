@@ -4,8 +4,11 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Lato", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+                sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
             },
+            backgroundImage: {
+                'header-image': "url('https://www.pakukuljetus.fi/wp-content/uploads/xpakukuljetus-tausta.jpg,qid=915.pagespeed.ic.brNg9ptsTD.webp')",
+            }
         },
     },
     plugins: [],
