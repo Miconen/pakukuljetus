@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props as Props;
 
 import '../styles/index.scss';
+import '@fontsource/lato';
 ---
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ import '../styles/index.scss';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="font-sans font-normal leading-relaxed text-base text-gray-800">
 		<slot />
 	</body>
 </html>
