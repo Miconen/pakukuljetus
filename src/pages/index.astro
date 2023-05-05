@@ -1,29 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header/Header.jsx';
-import Cards from '../components/Cards/Cards.jsx';
-import Description from '../components/Description/Description.jsx';
-import './index.scss';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Cards from "../components/Cards/Cards";
+import Button from "../components/Button/Button";
+import Description from "../components/Description/Description";
+import "./index.scss";
 ---
 
 <Layout title="Pakukuljetus">
-    <nav>
-        <svg width="58" height="48" viewBox="0 0 58 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 4H54" stroke="white" stroke-width="8" stroke-linecap="round"/>
-            <path d="M4 24H54" stroke="white" stroke-width="8" stroke-linecap="round"/>
-            <path d="M4 44H54" stroke="white" stroke-width="8" stroke-linecap="round"/>
-        </svg>
-    </nav>
-    <Header/>
+    <Navbar />
+    <Header />
     <main>
         <Cards />
         <Description />
     </main>
-    <footer>
-        <div class="container">
-            <section>
-                Footer
-            </section>
-        </div>
-    </footer>
+    <Button type="Main">PYYDÄ TARJOUS</Button>
+    <Footer />
 </Layout>
