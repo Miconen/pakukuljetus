@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@astrojs/react": "^1.1.1",
+    "@fontsource/lato": "^4.5.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^3.1.2",
