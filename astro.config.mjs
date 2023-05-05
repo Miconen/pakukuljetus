@@ -1,12 +1,12 @@
 import { defineConfig } from "astro/config";
-
 import react from "@astrojs/react";
+
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [react()],
-    site: "https://miconen.github.io",
-    base: "/pakukuljetus",
-    output: "static",
+  integrations: [react(), tailwind()],
+  site: "https://miconen.github.io",
+  base: "/pakukuljetus",
+  output: "static"
 });
-
