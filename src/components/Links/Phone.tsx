@@ -1,4 +1,5 @@
 import { Phone as PhoneIcon } from 'react-feather';
+import classList from "../../styles/classList";
 
 type Props = {
     className?: string;
@@ -7,10 +8,13 @@ type Props = {
 }
 
 function Phone({ className = "", number, call }: Props) {
+    // Create an array of classes
+    const classes = ["hover:underline flex items-inline gap-2"];
+    if (className) classes.push(className);
+    const classListStr = classList(classes);
+
     return (
-        <div className="flex items-center gap-1">
-            <PhoneIcon /><a href={`tel:${call}`} className={`${className} hover:underline`}>{number}</a>
-        </div>
+        <a href={`tel:${call}`} className={classListStr}><PhoneIcon />{number}</a>
     )
 }
 

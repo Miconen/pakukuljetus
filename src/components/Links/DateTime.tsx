@@ -1,4 +1,5 @@
 import { Clock as ClockIcon } from 'react-feather';
+import classList from "../../styles/classList";
 
 type Props = {
     className?: string;
@@ -6,10 +7,13 @@ type Props = {
 }
 
 function DateTime({ className = "", content }: Props) {
+    // Create an array of classes
+    const classes = ["hover:underline flex items-inline gap-2"];
+    if (className) classes.push(className);
+    const classListStr = classList(classes);
+
     return (
-        <div className="flex items-center gap-1">
-            <ClockIcon /><span className={`${className}`}>{content}</span>
-        </div>
+        <span className={classListStr}><ClockIcon />{content}</span>
     )
 }
 
