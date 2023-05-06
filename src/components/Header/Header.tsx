@@ -4,7 +4,7 @@ import Phone from "../Links/Phone";
 
 function Header() {
     return (
-        <header className="bg-header-image bg-cover bg-center text-white">
+        <header className="bg-header-image bg-cover bg-center text-white shadow-lg">
             <div className="flex justify-center h-full w-full backdrop-brightness-50 bg-gradient-to-l from-blue-500/25 to-blue-500/50">
                 <Container className="gap-8 px-4 py-16 md:px-0 md:py-24">
                     <h1 className="font-extrabold leading-none text-4xl md:text-5xl lg:text-6xl w-3/4">Keskity sinä uuteen kotiisi – me muutamme tavarat puolestasi!</h1>
