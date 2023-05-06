@@ -1,4 +1,4 @@
-import { MdEmail } from 'react-icons/md';
+import { Mail as EmailIcon } from 'react-feather';
 
 type Props = {
     className?: string;
@@ -8,7 +8,7 @@ type Props = {
 function Email({ className = "", email }: Props) {
     return (
         <div className="flex items-center gap-1">
-            <MdEmail /><a href={`mailto:${email}`} className={`${className} hover:underline`}>{email}</a>
+            <EmailIcon /><a href={`mailto:${email}`} className={`${className} hover:underline`}>{email}</a>
         </div>
     )
 }
