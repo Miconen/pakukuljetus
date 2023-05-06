@@ -1,4 +1,4 @@
-import { IoIosTime } from 'react-icons/io';
+import { Clock as ClockIcon } from 'react-feather';
 
 type Props = {
     className?: string;
@@ -8,7 +8,7 @@ type Props = {
 function DateTime({ className = "", content }: Props) {
     return (
         <div className="flex items-center gap-1">
-            <IoIosTime /><span className={`${className}`}>{content}</span>
+            <ClockIcon /><span className={`${className}`}>{content}</span>
         </div>
     )
 }
