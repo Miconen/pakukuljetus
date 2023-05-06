@@ -1,23 +1,45 @@
 ---
-export interface Props {
-	title: string;
+import "../styles/index.scss";
+
+const Meta = {
+    title: "Suomen Pakukuljetus",
+    title_long: "Suomen Pakukuljetus | Kuljetus ja Muuttopalvelu | Muutot ja Kuljetukset",
+    description: "Kuljetus ja muuttopalvelu Helsinki Espoo Vantaa Tampere -alueella. Palvelemme klo 9-21 myös viikonloppuisin. Tilaa pakukuljetus.",
+    thumbnail: "https://www.pakukuljetus.fi/wp-content/uploads/ogimg.jpg",
+    link: "https://www.pakukuljetus.fi/",
 }
-
-const { title } = Astro.props as Props;
-
-import '../styles/index.scss';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="font-sans font-normal leading-relaxed text-base text-gray-800">
-		<slot />
-	</body>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content={Meta.description}
+        />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={Meta.title} />
+        <meta property="og:description" content={Meta.title_long} />
+        <meta property="og:image" content={Meta.thumbnail} />
+        <meta property="og:url" content={Meta.link} />
+        <meta property="og:site_name" content={Meta.title} />
+
+        <meta name="twitter:title" content={Meta.title}>
+        <meta name="twitter:description" content={Meta.description}>
+        <meta name="twitter:image" content={Meta.thumbnail}>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name=" robots" content=" index, follow" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.pakukuljetus.fi/" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{Meta.title_long}</title>
+    </head>
+    <body class="font-sans font-normal leading-relaxed text-base text-gray-800">
+        <slot />
+    </body>
 </html>
